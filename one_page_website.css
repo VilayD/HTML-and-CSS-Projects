@@ -1,0 +1,297 @@
+/*===============================================
+    STLYE
+===============================================*/
+
+html {
+    font-family: sans-serif;
+    font-size: 60%;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(6, 27, 136);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.flex-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.navbar {
+    height: 105;
+    max-height: 340px;
+    display: block;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+footer,
+nav {
+    display: block;
+}
+
+#home {
+    background: url(../pictures/image/yawning_dog.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 200px; /* This is spacer before the Main title Logo.*/
+    padding-bottom: 500px; /* This is spacer after the Logo*/
+    color: #fff;
+}
+
+/*=============================================================
+    Nav
+=============================================================*/
+.menu-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /*  This ensures that the images cannot 
+        render outside of their container
+        without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;}
+
+  
+.menu-container { 
+    color: #f00;
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+}
+
+.selection li {
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9D9FA2;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    /*background-color: #052136;*/
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.selection li:hover {
+    color: rgb(189, 15, 15);
+    background-color: rgba(14, 7, 32, 0.3);
+}
+
+/*======================================================
+    END NAV
+======================================================*/
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: rgb(6, 27, 136);
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: center;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double rgb(15, 2, 2);
+    padding: 10px;
+}
+
+.head-sub p{
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+/*=========================================================
+    Pictures
+=========================================================*/
+.image {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100,65,0,.3);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: rgb(33, 6, 95);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
+.white-head {
+    color: #C9BDAA;
+    margin-top: 5%;
+}
+
+/*===========================================
+    Photo Overlay Transition
+===========================================*/
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+/*======================================================
+    END PHOTO
+======================================================*/
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subscribe {
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgb(6, 27, 136);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 300;
+    color: rgb(6, 27, 136);
+    padding: 12px 12px;
+    width: 75%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227,222,222);
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
+    font-family: 'Raleway', sans-serif;
+}
+.subscribe input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(172, 108, 108, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.subscribe input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+}
+
+.submit input[type="submit"] {
+    color: rgb(225, 225, 225);
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    font-weight: 600;
+    background-color: #8D8E8F;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
